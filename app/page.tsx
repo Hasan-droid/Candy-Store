@@ -1,15 +1,12 @@
-"use client";
-import Image from "next/image";
-import Navbar from "../components/Navbar";
-import HeaderMain from "../components/HeaderMain";
-import HeaderSecondary from "../components/HeaderSecoundry";
-import Footer from "../components/Footer";
+import Layout from "../components/Layout";
+import BestSellers from "../components/BestSellers";
+import GetThemNow from "../components/GetThemNow";
 
 export default function Home() {
   return (
-    <div>
-      <HeaderMain />
-      <Footer />
-    </div>
+    <Layout criteria={true}>
+      <BestSellers />
+      <GetThemNow />
+    </Layout>
   );
 }
