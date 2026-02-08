@@ -17,7 +17,9 @@ export default function product({ image, name, price }) {
           />
         </Link>
       </div>
-      <div className="font-fredoka text-xl">{name}</div>
+      <div className="font-fredoka text-xl font-semibold font-fredoka">
+        {name}
+      </div>
       <div className="flex items-center justify-center mt-3">
         <Rating />
       </div>

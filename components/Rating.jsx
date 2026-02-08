@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Rating() {
   return (
-    <div>
+    <div className="flex">
       <Image src="/star-icon.svg" alt="star icon" width={20} height={20} />
       <Image src="/star-icon.svg" alt="star icon" width={20} height={20} />
       <Image src="/star-icon.svg" alt="star icon" width={20} height={20} />
