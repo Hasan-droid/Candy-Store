@@ -5,11 +5,12 @@ import Drawer from "./Drawer";
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "./Navbar";
-import { useRouter } from "next/compat/router";
+import { usePathname } from "next/navigation";
 export default function HeaderSecondary() {
-  const router = useRouter();
   const [active, setActive] = useState(false);
-  const pageTitle = router?.pathname.slice(1).toUpperCase();
+  const pageTitle =
+    usePathname().split("/").pop().charAt(0).toUpperCase() +
+    usePathname().split("/").pop().slice(1);
   return (
     <div
       className="text-white mb-10 xl:mb-24 h-[257px] md:h-[384px] xl:h-[447px] bg-no-repeat bg-cover md:bg-bottom bg-center font-poppins w-full"
@@ -80,7 +81,7 @@ export default function HeaderSecondary() {
           </div>
         </div>
         <Navbar />
-        <div className="text-center text-4xl md:mt-6 xL:5xl leading-normal pt-8 pb-3 font-fredoka">
+        <div className="text-center font-semibold text-4xl md:mt-6 xL:5xl leading-normal pt-8 pb-3 font-fredoka">
           {pageTitle ?? "Default"}
         </div>
       </div>

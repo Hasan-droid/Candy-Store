@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ProductGallery() {
   return (
-    <div className="md:col-span-2 relative xl:order-1 order-1 xl:col-span-5 border-2 rounded-2xl border-slate-400 bg-white">
+    <div className="md:col-span-2 relative xl:order-1 order-1 xl:col-span-5 border-2 rounded-3xl border-custom-gray bg-white">
       <div className="flex justify-end">
         <Image src="/arrows-expand.svg" width={20} height={20} alt="arrow" />
       </div>

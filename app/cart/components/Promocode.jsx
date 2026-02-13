@@ -15,7 +15,7 @@ export default function Promocode() {
         </div>
       </div>
       <div className="text-sm mt-1">
-        <span className="text-orange-400">
+        <span className="text-orange-400 underline">
           <Link href="">Sign In</Link>
         </span>{" "}
         to see all rewards

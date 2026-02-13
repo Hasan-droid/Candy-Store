@@ -15,9 +15,7 @@ export default function AddToCart() {
     <div className="xl:col-span-3 xl:order-1 order-3 border-2 rounded-3xl flex flex-col gap-6 border-custom-gray bg-white p-5 ">
       <div className="flex justify-between items-center">
         <div className="text-sm text-custom-purple-lite">Price:</div>
-        <div className="text-custom-red-2 text-lg font-poppinsbold font-bold">
-          $19.23
-        </div>
+        <div className="text-custom-red-2 text-lg font-poppinsbold font-bold">$19.23</div>
       </div>
       <div className="flex justify-between items-center">
         <div className="text-sm text-custom-purple-lite">Color:</div>
@@ -32,18 +30,16 @@ export default function AddToCart() {
       </div>
       <div className="flex justify-between items-center">
         <div className="text-sm text-custom-purple-lite">Availability:</div>
-        <div className="text-sm text-custom-red-2 font-poppinsbold font-semibold">
-          InStock
-        </div>
+        <div className="text-sm text-custom-red-2 font-poppinsbold font-semibold">InStock</div>
       </div>
-      <div className="flex justify-between items-center -mt-1">
+      <div className="flex justify-between items-center -mt-1 ">
         <div className="text-sm text-custom-purple-lite">Size:</div>
         <div className="text-sm text-custom-purple-lite">
           <select
-            className="bg-custom form-select w-[90px] rounded-full appearance-none block px-3 py-[4px]  
+            className="bg-custom  w-[90px] rounded-full appearance-none block px-3 py-[4px]  
           text-custom-purple-lite bg-clip-padding bg-no-repeat
            border-solid border-custom-gray transition ease-in-out
-            m-0 focus:text-gray-700 focus:bg-white focus:border:blue-600 
+            m-0  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:border-1 
             focus:outline-none"
           >
             <option>Small</option>
@@ -83,15 +79,8 @@ export default function AddToCart() {
           focus:ring-4 focus:ring-blue-300 rounded-full text-sm px-8 py-5 mr-2 
           dark:bg-blue-700 focus:outline-none focus:ring-blue-800"
         >
-          <Image
-            src="/bag-icon.svg"
-            width={16}
-            height={18}
-            alt="shopping bag"
-          />
-          <span className=" ml-2 font-poppins text-white ph-2 font-semibold">
-            Add to Cart
-          </span>
+          <Image src="/bag-icon.svg" width={16} height={18} alt="shopping bag" />
+          <span className=" ml-2 font-poppins text-white ph-2 font-semibold">Add to Cart</span>
         </button>
       </div>
     </div>

@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Subtotal() {
   return (
-    <div className="border-2 rounded-2xl border-slate-400 bg-white px-5 py-5">
+    <div className="border-2 rounded-2xl border-custom-gray bg-white px-5 py-5">
       <div className="flex justify-between mb-4">
         <div className="font-poppins text-sm text-custom-purple">Subtotal:</div>
-        <div className="font-poppins text-sm text-custom-red-2">$32.68</div>
+        <div className="font-poppins text-base text-custom-red-2">$32.68</div>
       </div>
       <div className="flex justify-between mb-4">
         <div className="font-poppins text-sm text-custom-purple">
@@ -14,10 +14,12 @@ export default function Subtotal() {
         <div className="font-poppins text-sm text-custom-red-2">$5.00</div>
       </div>
       <div className="flex justify-between mb-4">
-        <div className="font-poppins text-sm text-custom-purple">
+        <div className="font-poppins text-sm text-custom-purple font-bold">
           Estimated total:
         </div>
-        <div className="font-poppins text-lg text-custom-red-2">$36.68</div>
+        <div className="font-poppins text-2xl text-custom-red-2 font-bold">
+          $36.68
+        </div>
       </div>
       <div className="flex justify-between">
         <button
