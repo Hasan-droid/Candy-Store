@@ -18,6 +18,12 @@ const poppins = Poppins({
   subsets: ["latin"],
 });
 
+const poppinsBold = Poppins({
+  variable: "--font-poppinsbold",
+  weight: ["700"], // normal, semibold, bold
+  subsets: ["latin"],
+});
+
 const fredoka = Fredoka({
   variable: "--font-fredoka",
   subsets: ["latin"],
@@ -36,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${fredoka.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${poppinsBold.variable} ${fredoka.variable} antialiased`}
       >
         {children}
       </body>
